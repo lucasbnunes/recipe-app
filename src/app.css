@@ -1,3 +1,22 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+  --color-concrete-50: #f9f8f7;
+  --color-concrete-100: #f4f1f0;
+  --color-concrete-200: #e8e2e0;
+  --color-concrete-300: #d8cdc9;
+  --color-concrete-400: #c0afa9;
+  --color-concrete-500: #a8928b;
+  --color-concrete-600: #907972;
+  --color-concrete-700: #77645e;
+  --color-concrete-800: #645550;
+  --color-concrete-900: #564a46;
+  --color-concrete-950: #2c2523;
+}
+
+body {
+  @apply text-zinc-800 bg-zinc-50;
+  font-family: "Funnel Sans", "sans-serif";
+}
