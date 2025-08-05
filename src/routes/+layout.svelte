@@ -16,4 +16,5 @@
 	/>
 </svelte:head>
 
+<AppBar />
 {@render children?.()}
