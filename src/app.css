@@ -20,3 +20,7 @@ body {
   @apply text-zinc-800 bg-zinc-50 min-h-svh;
   font-family: "Funnel Sans", "sans-serif";
 }
+
+* {
+  @apply focus:ring-0
+}
