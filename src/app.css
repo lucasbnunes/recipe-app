@@ -22,5 +22,5 @@ body {
 }
 
 * {
-  @apply focus:ring-0
+  @apply ring-concrete-500 transition-shadow;
 }
