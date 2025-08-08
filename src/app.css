@@ -24,3 +24,9 @@ body {
 * {
   @apply ring-concrete-500 transition-shadow;
 }
+
+@layer base {
+  h2 {
+    @apply text-2xl font-medium;
+  }
+}
