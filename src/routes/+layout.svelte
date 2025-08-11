@@ -17,8 +17,10 @@
 	/>
 </svelte:head>
 
-<AppBar />
-<div class="mx-auto max-w-5xl px-4 py-8">
-	{@render children?.()}
+<div class="flex min-h-svh flex-col gap-8">
+	<AppBar />
+	<main class="mx-auto w-full max-w-5xl flex-1 px-4 py-8">
+		{@render children?.()}
+	</main>
+	<Footer />
 </div>
-<Footer />
