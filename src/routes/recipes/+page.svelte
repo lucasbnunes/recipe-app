@@ -6,7 +6,7 @@
 </script>
 
 <h1>Recipes</h1>
-<p class="mt-2 max-w-3xl text-concrete-700">
+<p class="text-muted mt-2 max-w-3xl">
 	Explore a world of flavors with our curated collection of recipes. Find inspiration for every
 	meal, from quick weeknight dinners to elaborate weekend feasts.
 </p>

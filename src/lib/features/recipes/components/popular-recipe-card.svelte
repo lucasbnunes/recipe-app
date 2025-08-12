@@ -16,7 +16,7 @@
 
 	<div class="flex flex-col">
 		<p class="font-medium">{recipe.name}</p>
-		<div class="flex gap-2 text-concrete-600">
+		<div class="flex gap-2 text-muted">
 			<span>
 				{recipe.difficulty}
 			</span>
