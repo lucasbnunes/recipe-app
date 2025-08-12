@@ -11,11 +11,15 @@
 
 <a
 	href={`/recipe/${recipe.id}`}
-	class={['flex w-full min-w-[180px] flex-col gap-2 sm:max-w-[180px]', className]}
+	class={['group flex w-full min-w-[180px] flex-col gap-2 rounded-md sm:max-w-[180px]', className]}
 	{...props}
 >
 	<div class="overflow-hidden rounded-lg">
-		<img alt={`${recipe.name} picture`} src={recipe.image} class="w-full" />
+		<img
+			alt={`${recipe.name} picture`}
+			src={recipe.image}
+			class="w-full transition-transform group-hover:scale-105 group-focus:scale-105"
+		/>
 	</div>
 
 	<div class="flex flex-col">
