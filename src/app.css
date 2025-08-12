@@ -26,6 +26,10 @@ body {
 }
 
 @layer base {
+  h1 {
+    @apply text-3xl font-medium;
+  }
+
   h2 {
     @apply text-2xl font-medium;
   }
