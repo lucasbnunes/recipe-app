@@ -19,7 +19,12 @@
 </div>
 
 {#snippet ingredients()}
-	<span>ingredients tab</span>
+	<h3 class="mb-3">Ingredients</h3>
+	<ul>
+		{#each recipe.ingredients as ingredient}
+			<li>{ingredient}</li>
+		{/each}
+	</ul>
 {/snippet}
 
 {#snippet instructions()}
