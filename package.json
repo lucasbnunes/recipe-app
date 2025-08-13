@@ -48,6 +48,7 @@
 	},
 	"dependencies": {
 		"@lucide/svelte": "^0.536.0",
+		"bits-ui": "^2.9.2",
 		"ky": "^1.8.2"
 	}
 }
