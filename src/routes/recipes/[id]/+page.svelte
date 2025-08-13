@@ -28,7 +28,12 @@
 {/snippet}
 
 {#snippet instructions()}
-	<span>instructions tab</span>
+	<h3 class="mb-3">Instructions</h3>
+	<ol>
+		{#each recipe.instructions as instruction}
+			<li>{instruction}</li>
+		{/each}
+	</ol>
 {/snippet}
 
 <Tabs
