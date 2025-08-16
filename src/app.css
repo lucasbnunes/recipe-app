@@ -39,7 +39,7 @@ body {
   select,
   input,
   textarea {
-    @apply outline-0 focus:ring-2 ring-concrete-500 transition-shadow;
+    @apply outline-0 focus-visible:ring-2 ring-concrete-500 transition-shadow;
   }
 
   ol {
