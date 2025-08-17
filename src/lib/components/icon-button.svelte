@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import type { ClassValue, SvelteHTMLElements } from 'svelte/elements';
+	import type { SvelteHTMLElements } from 'svelte/elements';
 
 	type IconButtonProps = SvelteHTMLElements['button'] & {
 		children: Snippet<[]>;
