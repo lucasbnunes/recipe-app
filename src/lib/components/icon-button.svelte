@@ -6,9 +6,9 @@
 		children: Snippet<[]>;
 	};
 
-	const { children, class: className }: IconButtonProps = $props();
+	const { children, class: className, ...props }: IconButtonProps = $props();
 </script>
 
-<button class={['rounded-full p-1', className]}>
+<button class={['rounded-full p-1', className]} {...props}>
 	{@render children()}
 </button>
