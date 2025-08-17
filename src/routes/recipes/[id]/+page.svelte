@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Tabs from '$lib/components/tabs.svelte';
+	import Rating from '$lib/features/recipes/components/rating.svelte';
 	import RecipeDetails from '$lib/features/recipes/components/recipe-details.svelte';
 	import type { PageProps } from './$types';
 
@@ -55,3 +56,6 @@
 
 <h3 class="mt-7 mb-3">Recipe details</h3>
 <RecipeDetails {recipe} />
+
+<h3 class="mt-7 mb-3">Reviews</h3>
+<Rating {recipe} />
