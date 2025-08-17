@@ -10,7 +10,7 @@
 </script>
 
 <a
-	href={`/recipe/${recipe.id}`}
+	href={`/recipes/${recipe.id}`}
 	class={['group flex w-full min-w-[180px] flex-col gap-2 rounded-md sm:max-w-[180px]', className]}
 	{...props}
 >
