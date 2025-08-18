@@ -7,6 +7,7 @@
 	let recipesPromise = $state(recipesApi.fetchRecipesByIds(bookmarks.get().map(String)));
 </script>
 
+<h1 class="mb-3">Bookmarks</h1>
 {#await recipesPromise}
 	<div class="flex h-[30vh] items-center justify-center"><Loader /></div>
 {:then recipes}
