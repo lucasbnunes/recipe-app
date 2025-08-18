@@ -19,5 +19,13 @@ export const recipesApi = {
 	},
 	fetchSingleRecipe: (id: string) => {
 		return httpClient.get<Recipe>(id);
+	},
+
+	/**
+	 * The API doesn't provide a way to fetch multiple recipes by Id,
+	 * so we simulate the response by using Promise.all
+	 */
+	fetchRecipesByIds: (ids: string[]) => {
+		return Promise.all(ids.map((item) => recipesApi.fetchSingleRecipe(String(item))));
 	}
 };
