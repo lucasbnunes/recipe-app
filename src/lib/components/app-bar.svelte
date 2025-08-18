@@ -17,6 +17,7 @@
 				<a
 					href="/bookmarks"
 					class="relative flex w-full place-items-center rounded-lg bg-concrete-200 p-2 text-sm"
+					aria-label="My bookmarks"
 				>
 					{#if bookmarks.get().length}
 						<span
