@@ -20,6 +20,10 @@
 			alt={`${recipe.name} picture`}
 			src={recipe.image}
 			class="w-full transition-transform group-hover:scale-105 group-focus:scale-105"
+			loading="lazy"
+			decoding="async"
+			height={1000}
+			width={1000}
 		/>
 		<div class="absolute inset-0 h-30 bg-gradient-to-b from-black/40 via-black/10 to-black/0"></div>
 		<BookmarkButton recipeId={recipe.id} class="absolute top-0 right-0 z-10" />
