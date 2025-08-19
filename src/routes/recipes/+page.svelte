@@ -1,14 +1,9 @@
 <script lang="ts">
-	import IconButton from '$lib/components/icon-button.svelte';
-	import Input from '$lib/components/input.svelte';
 	import RecipesGrid from '$lib/features/recipes/components/recipes-grid.svelte';
-	import { Search } from '@lucide/svelte';
+	import SearchBar from '$lib/features/recipes/components/search-bar.svelte';
 	import type { PageProps } from './$types';
 
 	const { data }: PageProps = $props();
-
-	const searchParams = new URLSearchParams(window.location.search);
-	let searchQuery = $state(searchParams.get('q'));
 </script>
 
 <h1>Recipes</h1>
@@ -18,13 +13,7 @@
 </p>
 
 <form method="GET" action={`/recipes`}>
-	<Input placeholder="Search recipes" class="my-8" name="q" bind:value={searchQuery}>
-		{#snippet endAdornment()}
-			<IconButton type="submit">
-				<Search />
-			</IconButton>
-		{/snippet}
-	</Input>
+	<SearchBar />
 </form>
 
 <RecipesGrid recipes={data.recipes} class="mt-7" />

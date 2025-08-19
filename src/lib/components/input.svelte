@@ -2,7 +2,7 @@
 	import type { Snippet } from 'svelte';
 	import type { HTMLInputAttributes } from 'svelte/elements';
 
-	interface InputProps extends HTMLInputAttributes {
+	export interface InputProps extends HTMLInputAttributes {
 		startAdornment?: Snippet;
 		endAdornment?: Snippet;
 	}
