@@ -18,6 +18,8 @@
 	{...props}
 >
 	{#each recipes as recipe (recipe.id)}
-		<RecipeCard {recipe} />
+		<li>
+			<RecipeCard {recipe} />
+		</li>
 	{/each}
 </ul>
