@@ -17,6 +17,11 @@ export const recipesApi = {
 			searchParams: params
 		});
 	},
+	searchRecipes: (params?: URLSearchParams) => {
+		return httpClient.get<RecipeListResponse>('search', {
+			searchParams: params
+		});
+	},
 	fetchSingleRecipe: (id: string) => {
 		return httpClient.get<Recipe>(id);
 	},
