@@ -6,8 +6,13 @@
 		startAdornment?: Snippet;
 		endAdornment?: Snippet;
 	}
-
-	const { class: className, startAdornment, endAdornment, ...props }: InputProps = $props();
+	const {
+		class: className,
+		startAdornment,
+		endAdornment,
+		value = $bindable(),
+		...props
+	}: InputProps = $props();
 </script>
 
 <div
@@ -24,6 +29,7 @@
 
 	<input
 		{...props}
+		{value}
 		class="form-input h-full w-full flex-1 rounded-lg border-none bg-transparent p-0 px-1 text-base leading-normal font-normal !ring-0 placeholder:text-concrete-500"
 	/>
 	{#if endAdornment}
