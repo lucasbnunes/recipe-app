@@ -1,4 +1,5 @@
 <script lang="ts">
+	import CategoriesTagGroup from '$lib/features/recipes/components/categories-tag-group.svelte';
 	import RecipesGrid from '$lib/features/recipes/components/recipes-grid.svelte';
 	import SearchBar from '$lib/features/recipes/components/search-bar.svelte';
 	import type { PageProps } from './$types';
@@ -15,5 +16,6 @@
 <form method="GET" action={`/recipes`}>
 	<SearchBar />
 </form>
+<CategoriesTagGroup />
 
 <RecipesGrid recipes={data.recipes} class="mt-7" />
