@@ -1,16 +1,32 @@
 <script lang="ts">
 	import type { SvelteHTMLElements } from 'svelte/elements';
+
+	type MouseEventButton = MouseEvent & { currentTarget: EventTarget & HTMLButtonElement };
+
 	type TagButtonProps = SvelteHTMLElements['button'] & {
-		onclick?: (selected: boolean, event: MouseEvent) => void;
+		onToggle?: (selected: boolean, event: MouseEventButton) => void;
+		selected?: boolean;
 	};
-	const { class: className, children, onclick, ...props }: TagButtonProps = $props();
 
-	let selected = $state(false);
+	const {
+		class: className,
+		children,
+		onToggle,
+		onclick,
+		selected: selectedProps,
+		...props
+	}: TagButtonProps = $props();
 
-	const handleClick = (e: MouseEvent) => {
-		onclick?.(selected, e);
+	let selected = $state(!!selectedProps);
 
+	$effect(() => {
+		selected = !!selectedProps;
+	});
+
+	const handleClick = (e: MouseEventButton) => {
+		onclick?.(e);
 		selected = !selected;
+		onToggle?.(selected, e);
 	};
 </script>
 
