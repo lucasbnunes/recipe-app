@@ -17,6 +17,9 @@ export const recipesApi = {
 			searchParams: params
 		});
 	},
+	fetchRecipesByMealType: (category: string) => {
+		return httpClient.get<RecipeListResponse>(`meal-type/${category}`);
+	},
 	searchRecipes: (params?: URLSearchParams) => {
 		return httpClient.get<RecipeListResponse>('search', {
 			searchParams: params
