@@ -1,8 +1,8 @@
-import snack from '$lib/assets/snacks.png';
-import breakfast from '$lib/assets/breakfast.png';
-import lunch from '$lib/assets/lunch.png';
-import dinner from '$lib/assets/dinner.png';
-import dessert from '$lib/assets/dessert.png';
+import snack from '$lib/assets/snacks.png?enhanced';
+import breakfast from '$lib/assets/breakfast.png?enhanced';
+import lunch from '$lib/assets/lunch.png?enhanced';
+import dinner from '$lib/assets/dinner.png?enhanced';
+import dessert from '$lib/assets/dessert.png?enhanced';
 import type { Category } from './types';
 
 export const CATEGORIES: Array<Category> = [

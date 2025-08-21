@@ -1,3 +1,5 @@
+import type { EnhancedImgAttributes } from '@sveltejs/enhanced-img';
+
 export interface Recipe {
 	id: number;
 	name: string;
@@ -28,5 +30,5 @@ type MealType = 'snacks' | 'breakfast' | 'lunch' | 'dinner' | 'dessert';
 export type Category = {
 	title: string;
 	value: MealType;
-	image: string;
+	image: EnhancedImgAttributes['src'];
 };
