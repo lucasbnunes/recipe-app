@@ -3,6 +3,9 @@
 	import SelectableTag from '$lib/components/selectable-tag.svelte';
 	import { onMount } from 'svelte';
 	import { CATEGORIES } from '../constants';
+	import type { SvelteHTMLElements } from 'svelte/elements';
+
+	const { class: className, ...props }: SvelteHTMLElements['ul'] = $props();
 
 	let active = $state<string | null>(null);
 
@@ -35,7 +38,7 @@
 	};
 </script>
 
-<ul class="flex flex-wrap gap-2">
+<ul class={['flex flex-wrap gap-2', className]} {...props}>
 	{#each CATEGORIES as category}
 		<li>
 			<SelectableTag

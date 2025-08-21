@@ -13,9 +13,7 @@
 	meal, from quick weeknight dinners to elaborate weekend feasts.
 </p>
 
-<form method="GET" action={`/recipes`}>
-	<SearchBar />
-</form>
-<CategoriesTagGroup />
+<span class="mt-7 block text-lg font-medium">Filter by meal type</span>
+<CategoriesTagGroup class="mb-7" />
 
 <RecipesGrid recipes={data.recipes} class="mt-7" />
