@@ -1,38 +1,61 @@
-# sv
+# Recipes App
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A small SvelteKit application to explore recipes.
 
-## Creating a project
+## Tech Stack
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Svelte
+- SvelteKit
+- TailwindCSS
+- Bits UI
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Features
 
-# create a new project in my-app
-npx sv create my-app
+- View recipes
+- Filter by meal type
+- Search recipes
+- Bookmark recipes
+- Fully responsive
+
+## Learning focus
+
+This project was created to practice **Svelte and SvelteKit fundamentals** before moving on to larger applications.  
+Key concepts I explored:
+- The new **Runes syntax**
+- **Filesystem-based routing**
+- **Client-side and server-side data fetching**
+- **Global state management**
+- **Server-Side Rendering (SSR)**
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/lucasbnunes/recipe-app.git
 ```
 
-## Developing
+Go to the project directory
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```bash
+  cd recipe-app
 ```
 
-## Building
+Install dependencies
 
-To create a production version of your app:
-
-```sh
-npm run build
+```bash
+  npm install
 ```
 
-You can preview the production build with `npm run preview`.
+Start the server
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+  npm run dev
+```
+## Demo
+You can access the live demo here: https://recipe-app-one-wheat.vercel.app
+
+## Screenshots
+<img width="3779" height="1913" alt="image" src="https://github.com/user-attachments/assets/480688e7-325d-44c7-b5ce-60f54f1e0611" />
+<img width="3756" height="2188" alt="image" src="https://github.com/user-attachments/assets/faa1a03c-3ed4-4bb4-b63d-3ac5f2343cd6" />
