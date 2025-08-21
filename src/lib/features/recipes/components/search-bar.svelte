@@ -25,7 +25,7 @@
 		{#if endAdornmentProp}
 			{@render endAdornmentProp()}
 		{:else}
-			<IconButton type="submit">
+			<IconButton type="submit" aria-label="Search">
 				<Search />
 			</IconButton>
 		{/if}
