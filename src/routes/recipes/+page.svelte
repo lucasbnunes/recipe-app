@@ -13,7 +13,7 @@
 	meal, from quick weeknight dinners to elaborate weekend feasts.
 </p>
 
-<span class="mt-7 block text-lg font-medium">Filter by meal type</span>
+<span class="mt-7 mb-3 block text-lg font-medium">Filter by meal type</span>
 <CategoriesTagGroup class="mb-7" />
 
 <RecipesGrid recipes={data.recipes} class="mt-7" />
