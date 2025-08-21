@@ -1,38 +1,6 @@
 <script lang="ts">
-	import snack from '$lib/assets/snacks.png';
-	import breakfast from '$lib/assets/breakfast.png';
-	import lunch from '$lib/assets/lunch.png';
-	import dinner from '$lib/assets/dinner.png';
-	import dessert from '$lib/assets/dessert.png';
+	import { CATEGORIES } from '../constants';
 	import CategoryCard from './category-card.svelte';
-
-	const CATEGORIES = [
-		{
-			title: 'Snacks',
-			url: '/snacks',
-			image: snack
-		},
-		{
-			title: 'Dessert',
-			url: '/dessert',
-			image: dessert
-		},
-		{
-			title: 'Lunch',
-			url: '/lunch',
-			image: lunch
-		},
-		{
-			title: 'Dinner',
-			url: '/dinner',
-			image: dinner
-		},
-		{
-			title: 'Breakfast',
-			url: '/breakfast',
-			image: breakfast
-		}
-	];
 </script>
 
 <ul

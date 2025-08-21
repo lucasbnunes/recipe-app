@@ -1,20 +1,17 @@
 <script lang="ts">
 	import type { SvelteHTMLElements } from 'svelte/elements';
-	type Category = {
-		title: string;
-		url: string;
-		image: string;
-	};
+	import type { Category } from '../types';
+	type CategoryWithImage = Category & { image: string };
 
 	type CategoryCardProps = SvelteHTMLElements['a'] & {
-		category: Category;
+		category: CategoryWithImage;
 	};
 
 	const { class: className, category, ...props }: CategoryCardProps = $props();
 </script>
 
 <a
-	href={`/recipes/${category.url.replace('/', '')}`}
+	href={`/recipes?category=${category.value}`}
 	class={['flex w-full min-w-[180px] flex-col gap-2 sm:max-w-[180px]', className]}
 	{...props}
 >

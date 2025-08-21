@@ -13,7 +13,7 @@ export interface Recipe {
 	image: string;
 	rating: number;
 	reviewCount: number;
-	mealType: string[];
+	mealType: MealType[];
 }
 
 export interface RecipeListResponse {
@@ -22,3 +22,11 @@ export interface RecipeListResponse {
 	skip: number;
 	limit: number;
 }
+
+type MealType = 'snacks' | 'breakfast' | 'lunch' | 'dinner' | 'dessert';
+
+export type Category = {
+	title: string;
+	value: MealType;
+	image: string;
+};

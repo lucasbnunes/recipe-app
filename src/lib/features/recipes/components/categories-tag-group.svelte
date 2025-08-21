@@ -2,29 +2,7 @@
 	import { goto } from '$app/navigation';
 	import SelectableTag from '$lib/components/selectable-tag.svelte';
 	import { onMount } from 'svelte';
-
-	const CATEGORIES = [
-		{
-			title: 'Snacks',
-			value: 'snacks'
-		},
-		{
-			title: 'Dessert',
-			value: 'dessert'
-		},
-		{
-			title: 'Lunch',
-			value: 'lunch'
-		},
-		{
-			title: 'Dinner',
-			value: 'dinner'
-		},
-		{
-			title: 'Breakfast',
-			value: 'breakfast'
-		}
-	];
+	import { CATEGORIES } from '../constants';
 
 	let active = $state<string | null>(null);
 
