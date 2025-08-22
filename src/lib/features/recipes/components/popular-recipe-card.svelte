@@ -15,7 +15,13 @@
 	{...props}
 >
 	<div class="h-[135px] overflow-hidden rounded-lg">
-		<img alt={`${recipe.name} picture`} src={recipe.image} class="w-full" />
+		<img
+			alt={`${recipe.name} picture`}
+			src={recipe.image}
+			class="w-full"
+			height={1000}
+			width={1000}
+		/>
 	</div>
 
 	<div class="flex flex-col">
