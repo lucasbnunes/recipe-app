@@ -9,6 +9,14 @@
 	const { recipe } = data;
 </script>
 
+<svelte:head>
+	<title>Delight - {recipe.name}</title>
+	<meta
+		name="description"
+		content={`${recipe.name} — ${recipe.tags?.slice(0, 3).join(', ') || ''}. A ${recipe.difficulty} ${recipe.mealType?.[0] ?? ''} recipe for ${recipe.servings} people.`}
+	/>
+</svelte:head>
+
 <div class="relative h-[340px] overflow-hidden rounded-lg">
 	<img
 		src={recipe.image}

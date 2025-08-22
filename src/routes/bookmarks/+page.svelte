@@ -12,6 +12,14 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Delight - Bookmarks</title>
+	<meta
+		name="description"
+		content="Your saved Delight recipes — quickly access and manage recipes you've bookmarked for later cooking and inspiration."
+	/>
+</svelte:head>
+
 <h1 class="mb-3">Bookmarks</h1>
 {#await recipesPromise}
 	<div class="flex h-[30vh] items-center justify-center"><Loader /></div>

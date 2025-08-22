@@ -7,6 +7,14 @@
 	const { data }: PageProps = $props();
 </script>
 
+<svelte:head>
+	<title>Delight - Recipes</title>
+	<meta
+		name="description"
+		content="Explore Delight's recipe collection — filter by meal type, search ingredients, and find easy-to-follow recipes for breakfast, lunch, dinner, snacks, and desserts."
+	/>
+</svelte:head>
+
 <h1>Recipes</h1>
 <p class="mt-2 max-w-3xl text-muted">
 	Explore a world of flavors with our curated collection of recipes. Find inspiration for every

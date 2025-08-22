@@ -7,6 +7,13 @@
 	const { data }: PageProps = $props();
 </script>
 
+<svelte:head>
+	<meta
+		name="description"
+		content="Delight — discover curated recipes, trending picks, and meal ideas for every occasion. Browse categories, search, and save favorites."
+	/>
+</svelte:head>
+
 <form method="GET" action={`/recipes`}>
 	<SearchBar />
 </form>

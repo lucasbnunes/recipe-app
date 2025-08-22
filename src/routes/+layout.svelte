@@ -15,6 +15,7 @@
 		href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
 		rel="stylesheet"
 	/>
+	<title>Delight - Home</title>
 </svelte:head>
 
 <div class="flex min-h-svh flex-col gap-8">
